@@ -19,7 +19,6 @@ public class Client extends Thread{
 			Socket s = new Socket("localhost", 5555);
 			String msg;
 			ObjectOutputStream output = new ObjectOutputStream(s.getOutputStream());
-			//PrintStream out = new PrintStream(s.getOutputStream());
             BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 			System.out.println("Digite seu nome: ");
 			String user = stdin.readLine();
